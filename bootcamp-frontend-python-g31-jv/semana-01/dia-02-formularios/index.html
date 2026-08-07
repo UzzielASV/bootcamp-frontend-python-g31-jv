@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Formularios</title>
+<!-- Libreria Pico CSS-->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+</head>
+<body>
+  <main class="container">
+    <h1>Formularios + Inputs</h1>
+
+    <!--
+      FORMULARIO 01 — TIPOS DE INPUT
+
+      Este formulario permite conocer y probar diferentes tipos de campos <input>.
+      Incluye campos de texto, números, correo, teléfono, URL, contraseña, color,
+      búsqueda, selección de archivos y un campo oculto.
+
+      También permite observar la diferencia entre un campo de solo lectura
+      (readonly), un campo desactivado (disabled) y un botón de envío (submit).
+    -->
+
+    <section>
+      <h2>Formulario 01 — Tipos de Input</h2>
+      <p>
+        Este formulario permite conocer y probar diferentes tipos de campos <code>&lt;input&gt;</code>.
+        Incluye campos de texto, números, correo, teléfono, URL, contraseña, color,
+        búsqueda, selección de archivos y un campo oculto.
+      </p>
+      <p>
+        También permite observar la diferencia entre un campo de solo lectura
+        (<code>readonly</code>), un campo desactivado (<code>disabled</code>) y un botón de envío (<code>submit</code>).
+      </p>
+    <form>
+      <h2>Inputs</h2>
+      
+      <label for="text1">Input tipo texto</label>
+      <input type="text" placeholder="Ingresa algún texto" id="text1" />
+
+      <label>
+        Input (solo lectura)
+        <input type="text" placeholder="Input de solo lectura" readonly value="Copia este código" />
+      </label>
+
+      <label>
+        Input (Desactivado)
+        <input type="text" placeholder="Input de solo lectura" disabled />
+      </label>
+
+      <label>
+        Input tipo number
+        <input type="number" placeholder="Edad Ej. 18" min="18" max="90" />
+      </label>
+
+      <label>
+        Input tipo email
+        <input type="email" placeholder="Correo Ej. correo@mail.com" />
+      </label>
+
+      <label>
+        Input tipo range (edad)
+        <input type="range" min="0" max="100" step="10" />
+      </label>
+
+      <label>
+        Input teléfono
+        <input type="tel" placeholder="(+1) 999 999 999" />
+      </label>
+
+      <label>
+        Input tipo url
+        <input type="url" placeholder="Ej. misitio.com" />
+      </label>
+
+      <label>
+        Input tipo password
+        <input type="password" placeholder="Password" />
+      </label>
+
+      <label>
+        Input tipo color
+        <input type="color" />
+      </label>
+
+      <label>
+        Input tipo busqueda
+        <input type="search" />
+      </label>
+
+      <label>
+        Input tipo busqueda
+        <input type="search" />
+      </label>
+
+      <label>
+        Input tipo archivo (seleccionar un archivo a la vez) Ej. .png
+        <input type="file" accept=".png" />
+      </label>
+
+      <label>
+        Input tipo archivo (seleccionar multiples archivos)
+        <input type="file" multiple />
+      </label>
+
+      <input type="hidden" value="datos-ocultos" />
+
+      <input type="submit" value="Guardar">
+    </form>
+    </section>
+
+    <!--
+      FORMULARIO 02 — FECHAS Y HORAS
+
+      Este formulario permite practicar los campos relacionados con fechas y tiempo.
+      El usuario puede seleccionar una fecha con hora, un día específico, una hora,
+      una semana o un mes.
+    -->
+
+    <section>
+      <h2>Formulario 02 — Fechas y Horas</h2>
+      <p>
+        Este formulario permite practicar los campos relacionados con fechas y hora.
+        El usuario puede seleccionar una fecha con hora, un día específico, una hora,
+        una semana o un mes.
+      </p>
+    <form>
+      <h2>Input tipo fecha</h2>
+
+      <label>
+        Input tipo fecha y hora
+        <input type="datetime-local" />
+      </label>
+
+      <label>
+        Input tipo día
+        <input type="date" />
+      </label>
+
+      <label>
+        Input tipo hora
+        <input type="time" />
+      </label>
+
+      <label>
+        Input tipo semana
+        <input type="week" />
+      </label>
+
+      <label>
+        Input tipo mes
+        <input type="month" />
+      </label>
+    </form>
+    </section>
+    
+    <!--
+      FORMULARIO 03 — ÁREA DE TEXTO
+
+      Este formulario permite practicar el uso de <textarea>, un campo destinado
+      a escribir textos de varias líneas, como descripciones, observaciones
+      o comentarios extensos.
+
+      rows establece la cantidad inicial de filas visibles y cols establece
+      el ancho inicial del área de texto.
+    -->
+
+    <section>
+      <h2>Formulario 03 — Área de Texto</h2>
+      <p>
+        Este formulario permite practicar el uso de <code>&lt;textarea&gt;</code>, un campo destinado
+        a escribir textos de varias líneas, como descripciones, observaciones
+        o comentarios extensos.
+      </p>
+      <p>
+        <code>rows</code> establece la cantidad inicial de filas visibles y <code>cols</code> establece
+        el ancho inicial del área de texto.
+      </p>  
+    <form>
+      <h2>Textarea</h2>
+
+      <label>
+        <textarea placeholder="Escribe una descripción sobre ti..." rows="5" cols="4"></textarea>
+      </label>
+    </form>
+     </section>
+
+    <!--
+      FORMULARIO 04 — LISTAS DE SELECCIÓN
+
+      Este formulario permite comparar dos formas de utilizar <select>.
+      La primera lista permite seleccionar una sola comida y la segunda,
+      mediante multiple, permite seleccionar varias opciones.
+
+      Cada <option> representa una alternativa disponible dentro de la lista.
+    -->
+    
+    <section>
+      <h2>Formulario 04 — Listas de Selección</h2>
+      <p>
+        Este formulario permite comparar dos formas de utilizar <code>&lt;select&gt;</code>.
+        La primera lista permite seleccionar una sola comida y la segunda,
+        mediante <code>multiple</code>, permite seleccionar varias opciones.
+      </p>
+      <p>
+        Cada <code>&lt;option&gt;</code> representa una alternativa disponible dentro de la lista.
+      </p>
+    <form>
+      <h2>Selects</h2>
+
+      <label>
+        Selección simple
+        <select>
+          <option>Seleccionar tu comida favorita...</option>
+          <option value="fr">Francesa</option>
+          <option value="it">Italiana</option>
+          <option value="jp">Japonesa</option>
+          <option value="pe">Peruana</option>
+          <option value="th">Tailandesa</option>
+        </select>
+      </label>
+
+      <label>
+        Selección múltiple
+        <select multiple>
+          <option>Seleccionar tu comida favorita...</option>
+          <option value="fr">Francesa</option>
+          <option value="it">Italiana</option>
+          <option value="jp">Japonesa</option>
+          <option value="pe">Peruana</option>
+          <option value="th">Tailandesa</option>
+        </select>
+      </label>
+    </form>
+    </section>
+
+    <!--
+      FORMULARIO 05 — CASILLAS DE VERIFICACIÓN
+
+      Este formulario permite seleccionar uno, varios o ninguno de los lenguajes.
+      Cada checkbox funciona como una opción independiente y puede marcarse
+      o desmarcarse sin afectar las demás opciones.
+
+      Los atributos name y value identifican el dato correspondiente a cada casilla.
+    -->
+
+    <section>
+      <h2>Formulario 05 — Casillas de Verificación</h2>
+      <p>
+        Este formulario permite seleccionar uno, varios o ninguno de los lenguajes.
+        Cada checkbox funciona como una opción independiente y puede marcarse
+        o desmarcarse sin afectar las demás opciones.
+      </p>
+      <p>
+        Los atributos <code>name</code> y <code>value</code> identifican el dato correspondiente a cada casilla.
+      </p>
+    <form>
+      <h2>Checkboxes</h2>
+
+      <h3>Lenguajes de preferencia</h3>
+      <label>
+        <input type="checkbox" name="english" value="en" />
+        Inglés
+      </label>
+      <label>
+        <input type="checkbox" name="spanish" value="es" />
+        Español
+      </label>
+      <label>
+        <input type="checkbox" name="dothraki" value="do" />
+        Dothraki
+      </label>
+    </form>
+    </section>
+
+    <!--
+      FORMULARIO 06 — BOTONES DE OPCIÓN
+
+      Este formulario contiene dos grupos independientes de botones radio.
+      En el grupo name="lenguaje" solamente puede seleccionarse un lenguaje.
+      En el grupo name="comida" solamente puede seleccionarse una comida.
+
+      Como los dos grupos tienen nombres diferentes, el usuario puede seleccionar
+      simultáneamente un lenguaje y una comida.
+    -->
+
+    <section>
+      <h2>Formulario 06 — Botones de Opción</h2>
+      <p>
+        Este formulario contiene dos grupos independientes de botones radio.
+        En el grupo <code>name="lenguaje"</code> solamente puede seleccionarse un lenguaje.
+        En el grupo <code>name="comida"</code> solamente puede seleccionarse una comida.
+      </p>
+      <p>
+        Como los dos grupos tienen nombres diferentes, el usuario puede seleccionar
+        simultáneamente un lenguaje y una comida.
+      </p>
+    <form>
+      <h2>Radio buttons</h2>
+
+      <h3>Seleccione el lenguaje de preferencia:</h3>
+
+      <label>
+        <input type="radio" name="lenguaje" value="en" />
+        Inglés
+      </label>
+      <label>
+        <input type="radio" name="lenguaje" value="es" />
+        Español
+      </label>
+      <label>
+        <input type="radio" name="lenguaje" value="do" />
+        Dothraki
+      </label>
+
+      <h3>Seleccione su comida favorita:</h3>
+
+      <label>
+        <input type="radio" name="comida" value="ceviche" />
+        Ceviche
+      </label>
+      <label>
+        <input type="radio" name="comida" value="causa" />
+        Causa
+      </label>
+      <label>
+        <input type="radio" name="comida" value="arroz" />
+        Arroz con pato
+      </label>
+    </form>
+    </section>
+
+    <!--
+      FORMULARIO 07 — VALIDACIÓN DE DATOS
+
+      Este formulario permite practicar las validaciones básicas incorporadas
+      en HTML. El nombre debe ser obligatorio y contener entre 3 y 15 caracteres.
+      El correo debe estar completo y tener formato de email.
+
+      También es obligatorio seleccionar una comida. El formulario solo podrá
+      enviarse cuando los campos cumplan las condiciones establecidas.
+    -->
+    
+    <section>
+      <h2>Formulario 07 — Validación de Datos</h2>
+      <p>
+        Este formulario permite practicar las validaciones básicas incorporadas
+        en HTML. El nombre debe ser obligatorio y contener entre 3 y 15 caracteres.
+        El correo debe estar completo y tener formato de email.
+      </p>
+      <p>
+        También es obligatorio seleccionar una comida. El formulario solo podrá
+        enviarse cuando los campos cumplan las condiciones establecidas.
+      </p>
+    <form>
+      <h2>Validaciones</h2>
+
+    <label>
+        Nombre (obligatorio)
+        <input type="text" name="nombre" required minlength="3" maxlength="15" />
+    </label>
+
+    <label>
+        Email (obligatorio)
+        <input type="email" name="correo" required />
+    </label>
+
+    <label>
+        Comidas (obligatorio)
+        <select name="comidas" required>
+            <option value="">Selecciona tu comida favorita...</option>
+            <option>Francesa</option>
+            <option>Peruana</option>
+            <option>Italiana</option>
+        </select>
+    </label>
+
+      <input type="submit" value="Guardar" />
+    </form>
+    </section>
+  </main>
+</body>
+</html>

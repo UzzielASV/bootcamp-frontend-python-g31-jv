@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title> establece el nombre que aparece en la pestaña del navegador. -->
+    <title>Etiquetas HTML</title>
+</head>
+<body>
+    
+<!-- <h1> a <h6> representan encabezados ordenados por jerarquía: <h1> es el título principal y <h6> el de menor nivel. -->
+    <h1>Título principal de la página</h1>
+    <h2>Sección principal</h2>
+    <h3>Subsección de un &lt;h2&gt;</h3>
+    <h4>Subsección de un &lt;h3&gt;</h4>
+    <h5>Nivel inferior</h5>
+    <h6>Encabezado de menor jerarquía</h6>
+
+<!-- <p> crea un párrafo para agrupar texto relacionado. Cada párrafo comienza normalmente en una línea nueva. -->
+    <p>Párrafo 01</p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum velit quae, repellat atque, beatae quibusdam obcaecati voluptas vitae adipisci officia, labore asperiores corporis. Aperiam, maxime atque sequi iste ad officia.
+    </p>
+
+<!-- <img> inserta una imagen. src indica su ubicación, alt proporciona un texto alternativo y width y height establecen un tamaño de 100 × 100 píxeles. -->
+    <img src="imagenes/code-file-svgrepo-com.svg" alt="Code" width="100" height="100">
+
+<!-- <ul> crea una lista desordenada con viñetas y cada <li> representa un elemento de la lista. -->
+    <ul>
+        <li>Primer item</li>
+        <li>Segundo item</li>
+        <li>Tercer item</li>
+    </ul>
+
+<!-- <ol> crea una lista ordenada o numerada y cada <li> representa un elemento de la lista. -->
+    <ol>
+        <li>Primer item</li>
+        <li>Segundo item</li>
+        <li>Tercer item</li>
+    </ol>
+
+<!-- <strong> indica que un texto tiene gran importancia; <b> llama visualmente la atención sin añadir esa importancia semántica. -->
+    <strong>Texto en negrita</strong>
+    <b>Texto en negrita</b>
+
+<!-- <em> aplica énfasis semántico; <i> identifica expresiones como términos técnicos, otros idiomas o una voz diferente. -->
+    <em>Texto en cursiva</em>
+    <i>Texto en cursiva</i>
+
+<!-- <u> marca una anotación y normalmente la muestra subrayada; <s> indica que un contenido ya no es correcto o relevante. -->
+    <u>Texto subrayado</u>
+    <s>Texto tachado</s>
+
+<!-- <div> es un contenedor genérico de bloque utilizado para agrupar y organizar secciones del contenido. -->
+    <div>
+        Sirve para <strong>dividir/separar</strong> el contenido y además es del tipo bloque.
+    </div>
+
+<!-- <span> es un contenedor genérico en línea utilizado para agrupar una parte específica del texto. -->
+    <span>
+        Sirve para dividir/separar el contenido y además es del tipo en línea (in-line).
+    </span>
+
+<!-- <a> crea un enlace y href establece su destino. El primer enlace, sin target, se abre en la misma pestaña. -->
+<!-- El segundo enlace utiliza target="_blank" para solicitar que el destino se abra en una pestaña o ventana nueva. -->
+    <p>
+        <a href="https://www.youtube.com">Enlace a YouTube</a>
+        <a href="https://www.youtube.com" target="_blank">Enlace a YouTube</a>
+    </p>
+
+<!-- <br> introduce un salto de línea dentro del mismo párrafo. Es una etiqueta vacía y no necesita cierre. -->
+    <p>
+    Lorem ipsum dolor, <br> sit amet consectetur adipisicing elit. <br> Corrupti fugiat esse aliquid nihil enim tenetur quas vitae itaque explicabo unde nostrum perferendis inventore, <br> sequi minus eum facilis nobis corporis accusamus.
+    </p>
+
+<!-- <pre> muestra texto preformateado y conserva exactamente sus espacios, sangrías y saltos de línea. -->
+    <pre>
+    function mensaje(str) {
+        console.log(str);
+    }
+    </pre>
+
+    <!-- TODO: INVESTIGAR PARA MAÑANA LA ETIQUETA VIDEO-->
+<!-- <video> inserta un reproductor de video. src indica el archivo, width establece su ancho y controls muestra los controles de reproducción. -->
+<!-- El texto situado entre <video> y </video> se muestra si el navegador no puede reproducir el archivo. -->
+    <video src="videos/ejemplo.mp4" width="640" controls>
+        El navegador no admite la reproducción del video.
+    </video>
+
+</body>
+</html>
