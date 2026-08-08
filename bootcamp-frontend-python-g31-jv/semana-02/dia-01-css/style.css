@@ -1,0 +1,11 @@
+/* Aprendiendo CSS */
+
+body   {
+    background-color: #011c40;
+}
+
+p {
+    color: #a7ebf2  ;
+}
+
+/* TODO: Añadan un background a la etiqueta h2, h3, h4 y cambien su tamañna a 50px. */

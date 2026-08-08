@@ -1,0 +1,31 @@
+/* TODO: Añadan un background a la etiqueta h2, h3, h4 y cambien su tamañna a 50px. */
+
+body {
+    background-color: #051f20;
+}
+
+h1 {
+    color: #f5ebfa;
+}
+
+h2 {
+    color: #f5ebfa;
+    background-color: #163832  ;
+    font-size: 50px;
+}
+
+h3 {
+    color: #f5ebfa;
+    background-color: #235347;
+    font-size: 50px;
+}
+
+h4 {
+    color: #f5ebfa;
+    background-color: #8eb69b;
+    font-size: 50px;
+}
+
+p {
+    color: #daf1de;
+}
