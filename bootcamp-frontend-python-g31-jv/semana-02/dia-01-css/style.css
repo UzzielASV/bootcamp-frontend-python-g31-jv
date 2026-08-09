@@ -9,3 +9,26 @@ p {
 }
 
 /* TODO: Añadan un background a la etiqueta h2, h3, h4 y cambien su tamañna a 50px. */
+
+h5  {
+    background-color: #583714;
+    color: #ffeb97;
+    font-size: 50px;
+}
+
+#estado {
+    background-color: #C50337;
+    color: beige;
+}
+
+.btn {
+    background-color: #052943;
+}
+
+.texto-resaltado {
+    color: #f3ebd6;
+}
+
+.btn-verde {
+    background-color: #0b6353;
+}

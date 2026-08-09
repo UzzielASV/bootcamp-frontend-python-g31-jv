@@ -157,3 +157,12 @@ console.log(persona.direccion.ciudad) // Arequipa
 console.log(persona.direccion.pais) // Perú
 persona.saludar() // Hola, mi nombre es Uzziel Solís
 
+// Eliminar las propiedades de un Objeto
+
+delete persona.edad; // Elimina la propiedad "edad" del objeto "persona"
+console.log(persona.edad) // undefined  
+
+// Insertar nuevas propiedades a un Objeto
+
+persona.email = "uzziel.s.v@icloud.com"; // Inserta la propiedad "email" al objeto "persona"
+console.log(persona.email) //
