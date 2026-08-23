@@ -69,9 +69,30 @@ a {
 }
 
 /* Cascada */
-/* Decide qué*/
+/* Decide qué estilo gana cuando hay confictos. Depende del orden, específicidad y herencia */
+header {
+    color: darkred;
+}
 
+#cabecera {
+    color: indianred;
+}
 
+.texto {
+    color: indigo;
+}
+
+/* Unidades de medida */
+/* Absolutas: px, cm, in */
+/* Relativas: em, rem, %, vw, vh (son mas modernas y flexibles)*/
+/* Colores */
+h2 {
+    color: crimson;
+    color: #dc143c; /* 3 muneros hexadecimales (red, green, blue). */
+    color: hsl(82, 39%, 30%); /* Crea un color a partir de valores de matiz (Hue), saturación (saturation) y claridad (lightness). */
+    color: hsl(240, 100%, 27%, 0.5); /* COn transparencia */
+    color: rgb(178, 34, 34); /* 3 numeros decimales van entre los valores desde 0 al 255 (rojo, verde, azul), tambien se le puede añadir transparencia. */
+}   
     </style>
 </head>
 <body>
