@@ -6,18 +6,70 @@
     <title>Teoria CSS</title>
     <link rel="stylesheets" href="style.css">
     <style>
-        /* Pseudo clases */
-        button {
-            background-color: darkorange;
-        }
+/* Pseudo clases */
+button {
+    background-color: darkorange;
+}
 
-        button:hover {
-            background-color: blanchedalmond;
-            font-size: 15px;
-        }
+button:hover {
+    background-color: blanchedalmond;
+    font-size: 15px;
+}
 
+/* Pseudo elementos*/
+/* Permiten crear partes virtuales de un elemento (etiqueta) */
+p {
+    color: blue;
+}
 
+p::before {
+    content: '🔥 X';
+    color: red;
+}
 
+p::after {
+    content: '🎃';
+    font-size: 20px;
+}
+
+/* Selectores combinados*/
+/* Selector descendiente*/
+article {
+    background-color: antiquewhite;
+}
+
+article h2 {
+    color: brown;
+}
+
+article strong {
+    color: coral;
+}
+
+/* Selector de multiples selectores */
+
+h1, h3, em {
+    border: 2px solid darkslateblue;
+}
+
+/* Herencias */
+/* Permite crear partes virtuales de un elemento (etiueta) */
+body {
+    color: darkorange;
+}
+
+button {
+    /*color: antiquewhite;*/
+    color: inherit;
+}
+
+a {
+    /*color: green*/
+    color: inherit;
+}
+
+/* Cascada */
+/* Decide qué*/
 
 
     </style>
@@ -47,6 +99,9 @@
         <h2>
             Subtítulo
         </h2>
+        <h3>
+            Otro Subtítulo
+        </h3>
         <strong>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe corporis sint porro, eius eum cum officia consequatur sequi quo perspiciatis rem maxime quam voluptates amet ducimus perferendis eos facere accusamus.
         </strong>
