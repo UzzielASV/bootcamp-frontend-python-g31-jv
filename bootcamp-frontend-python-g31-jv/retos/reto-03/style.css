@@ -1,0 +1,22 @@
+body {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 8%);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+main {
+    background-color: hsl(0, 0%, 12%);
+}
+
+.link_social {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.location {
+    color: hsl(75, 94%, 57%);
+}
+
+.photo {
+    background-image: url(assets/images/avatar-uzziel.png);
+}
