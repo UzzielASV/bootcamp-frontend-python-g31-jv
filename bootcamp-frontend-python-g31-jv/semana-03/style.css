@@ -1,0 +1,32 @@
+.caja {
+    color: aliceblue;
+    background-color: darkorange;
+
+    width: 200px;
+    height: 50px;
+
+    border: 5px solid darkred;
+
+    padding: 10px; /* Espacio interno, entre el contenido y el borde. */
+    margin: 10px; /* Espacio externo, despues del borde. */
+
+    padding: 20px 10px 20px 10px; /* Top, Rigth, Botton, Left */
+
+    box-sizing: content-box; /* Valor por defecto, deja que nosotros calculemos el ancho de la caja incluyendo, alto, padding, borde, margin. */
+    box-sizing: border-box; /* Deja que el navegador calcule el ancho de la caja incluyendo, alto, padding, borde, margin. */
+}
+
+.bloque {
+    background-color: orange;
+    display: block;
+}
+
+.enlinea {
+    background-color: darkgreen;
+    display: inline;
+}
+
+.enlinea-bloque {
+    background-color: darkgoldenrod;
+    display: inline-block;
+}
