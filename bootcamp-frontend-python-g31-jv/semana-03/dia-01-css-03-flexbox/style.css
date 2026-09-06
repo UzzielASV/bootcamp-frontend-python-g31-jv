@@ -1,0 +1,23 @@
+.contenedor {
+    background-color: darkorange;
+    color: aliceblue;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: row; /* Valor por defecto. */
+    gap: 20px;
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    align-items: center;
+    /* align-items: end; */
+    /* align-items: start; */
+}
+
+.box {
+    background-color: #ffc067;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+}

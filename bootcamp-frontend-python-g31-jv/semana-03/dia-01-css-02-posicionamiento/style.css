@@ -1,0 +1,55 @@
+.relative {
+    background-color: darkseagreen;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    /*right: 100px;*/
+    /*bottom: 100px;*/
+    inset: 10px; /* Ayuda al contenedor y aplica a los cuatro valores en un solo. */
+}
+
+.absolute {
+    background-color: orange;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+}
+
+.pruebarelativepadre {
+    border: 1px solid darkred;
+}
+
+.pruebaconrelative {
+    background-color: darkseagreen;
+    position: relative;
+    top: -10px;
+    left: 10px;
+}
+
+.fixed {
+    position: fixed;
+    background-color: darkturquoise;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 3;
+}
+
+.ejemplo-relative {
+    background-color: darkcyan;
+    position: relative;
+    padding: 10px;
+    width: 200px;
+    height: 300px;
+}
+
+.ejemplo-absolute {
+    background-color: darkgoldenrod;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}
