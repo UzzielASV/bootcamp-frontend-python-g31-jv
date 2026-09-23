@@ -12,10 +12,16 @@ font-family: "Open Sans", sans-serif;
 html {
     font-size: 14px; /* 16px valor por defecto */
 }
-  
+
+/* Utilitarios*/
 /* display: none; = ocultar texto*/
 .hidden {
     display: none;
+}
+
+.wrapper {
+    width: min(100% - 3rem, 1440px);
+    margin: 0 auto;
 }
 
 /* Estilos generales */
@@ -32,15 +38,54 @@ a {
 
 /* TODO: RWD = Responsive Web Design, para las imagenes. */
 img {
-
+    max-width: 100%; /* Imagen se adapta al contenedor. */
+    height: auto;
 }
 
 .header {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     padding-top: 42px;
     background-color: hsl(217, 28%, 15%);
+}
+
+.header__logo {
+    width: 140px;
+}
+
+.header__nav {
+    display: flex;
+    gap: 42px;
+}
+
+/* REM: Root EM (amcho de la letra M) */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* 1rem es igual a 14px*/
+
+    padding-top: 3rem;
+    padding-bottom: 12rem;
+
+    background-color: hsl(217, 28%, 15%);
+    background-image: url(images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
+.hero__title {
+
+}
+
+.hero__text {
+
+}
+
+.hero__button {
+
 }
