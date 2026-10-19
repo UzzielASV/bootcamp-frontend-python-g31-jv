@@ -102,3 +102,34 @@ img {
 }
 
 /* TODO: Publicarlo hasta Stay Productive en Netlify y compartirlo por Discord en Presentaciones de la semana 3 */
+
+/* Parte 01 */
+.service {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6rem 4rem;
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;
+    text-align: center;
+}
+
+.service img {
+    width: min(100%, 7rem);
+    height: 7rem;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+}
+
+.service h2 {
+    font-size: 2rem;
+    color: inherit;
+    margin-bottom: 1rem;
+}
+
+.service p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: inherit;
+}
+
+/* Parte 02 */
