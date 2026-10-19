@@ -1,3 +1,5 @@
+// node main.js - node --watch main.js
+
 // console.log("Hola, JS Intermedio!");
 
 // "Tipos de datos primitivos (numbers, string, boolean, null, underfined, symbol, bigint)"
@@ -12,11 +14,11 @@
 
 const arrayVacio = []; // Array vacío
 const listaNumeros = [1, 2, 3, -4, +5]; // Array de números
-const listaValores = ["1", "2", "Uzziel", "Solís", "Vera"]; // Array de strings
+const listaValores = ["1", "2", "Uzziel", "Solís", "Vega"]; // Array de strings
 
 console.log(arrayVacio) // []
 console.log(listaNumeros) // [1, 2, 3, -4, 5]
-console.log(listaValores) // ["1", "2", "Uzziel", "Solís", "Vera"]
+console.log(listaValores) // ["1", "2", "Uzziel", "Solís", "Vega"]
 
 // Lectura de los elementos de un array
 
@@ -165,4 +167,4 @@ console.log(persona.edad) // undefined
 // Insertar nuevas propiedades a un Objeto
 
 persona.email = "uzziel.s.v@icloud.com"; // Inserta la propiedad "email" al objeto "persona"
-console.log(persona.email) //
+console.log(persona.email)
