@@ -6,10 +6,42 @@
     <title>JS - DOM</title>
 </head>
 <body>
-    <h1>
-        JS - DOM
-    </h1>
+    <heade>
 
-    <script src="main.js"></script>
+        <h1>
+            JS - DOM
+        </h1>
+
+    </heade>
+
+    <main>
+
+        <p>
+            DOM - Document Object Model
+        </p>
+
+        <p>
+            Es una representación en forma de árbol de una página web.
+        </p>
+
+        <ul>
+            <li>Leer contenido de la página.</li>
+            <li>Cambiaar textos, atributos, estilos dinámicamente.</li>
+            <li>Crear o eliminar elementos.</li>
+            <li>Escuchar eventos (click, teclas, scroll, mouse, etc...)</li>
+        </ul>
+
+    </main>
+    
+    <script>
+        console.log('Hola DOM')
+        console.log(document)
+        console.log({ document: document }) <!-- Nota: Solo es para ver su contenido de objeto. -->
+
+        console.log(document.title)  <!-- Nota: Leemos el titulo de la página. -->
+
+        document.title = 'DOM' <!-- Nota: Cambianos el titulo de la página. -->
+    </script>    
+    
 </body>
 </html>
