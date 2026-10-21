@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=º, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS - DOM - KEY</title>
     <style>
         #tecla {
@@ -37,6 +37,17 @@
 
         const tecla = document.getElementById('tecla')
         const caracter = document.getElementById('caracter')
+
+        document.addEventListener('keydown', function(event){
+            console.log('Tecla presionada')
+
+            console.log({event})
+            console.log(event.key) <!-- Nota: Letra precionada. -->
+            console.log(event.keyCode) <!-- Nota: Código ASCII -->
+
+            tecla.textContent = event.keyCode
+            caracter.textContent = event.key
+        })
 
         /* 
             console.log({ tecla }) // Nota: textContent
